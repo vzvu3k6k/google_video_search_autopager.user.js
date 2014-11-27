@@ -3,3 +3,9 @@ In Google Video Search with JavaScript enabled, thumbnails appended by [AutoPage
 If you use this script with AutoPagerize, set this exclude pattern: `/^https://(www\.)?google\.(com|co\.\w\w)/search\?.*tbm=vid.*/`.
 
 `@match` is for userscript engines which don't support don't support `@include` (e.g. Google Chrome).
+
+# See Also
+
+- [firefox用スクリプトアップローダー | fixAutoPagerize4Google.user.js 検索 | uploader.jp](http://u6.getuploader.com/script/search?q=fixAutoPagerize4Google.user.js)
+  - Fixes probably all kinds of thumbnails (e.g. image search snippet in web search)
+  - Works with AutoPagerize
