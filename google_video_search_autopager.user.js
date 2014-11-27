@@ -67,10 +67,11 @@
         break;
       }
 
-      document.body.appendChild(document.createElement('hr'));
+      var $res = document.getElementById('res');
+      $res.appendChild(document.createElement('hr'));
 
       // Append search results
-      document.body.appendChild(xhr.responseXML.getElementById('rso'));
+      $res.appendChild(xhr.responseXML.getElementById('rso'));
 
       nextUrl = getNextUrl(xhr.responseXML);
     };
