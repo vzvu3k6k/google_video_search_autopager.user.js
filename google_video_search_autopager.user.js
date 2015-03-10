@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           Google Video Search: Autopager
 // @description    Infinite Scroll with Thumbnails
-// @version        1.1
+// @version        1.2
 // @author         vzvu3k6k
 // @include        /^https:\/\/www\.google\.tld/search\?*.*tbm=vid.*/
 // @match          https://www.google.com/search?*
