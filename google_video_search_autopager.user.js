@@ -54,13 +54,13 @@
         if(scripts[i].textContent.indexOf('base64') === -1) continue;
 
         scripts[i].textContent.replace(
-            /a\('(vidthumb\d+)','(data:image\/jpeg;base64,[^']+)'/g,
+            /\["(vidthumb\d+)","(data:image\/jpeg;base64,[^"]+)"\]/g,
           function(substr, id, image){
             var $img = xhr.responseXML.getElementById(id);
 
             // Fix hexadecimal escape sequences
-            // (In JavaScript string literal, for instance, '\x3d' means '=')
-            $img.src = image.replace(/\\x(..)/g, function(substr, code){
+            // (In JavaScript string literal, for instance, '\u003d' means '=')
+            $img.src = image.replace(/\\u([0-9a-z]{4})/g, function(substr, code){
               return String.fromCharCode(parseInt(code, 16));
             });
           });
