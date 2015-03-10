@@ -8,6 +8,7 @@
 // @match          https://www.google.co.jp/search?*
 // @namespace      http://vzvu3k6k.tk/
 // @license        CC0
+// @grant          none
 // ==/UserScript==
 
 (function(){
